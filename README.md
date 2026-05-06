@@ -12,19 +12,14 @@ or throughput delta reflects only the serving layer.
   comparison. Numbered notebooks `01_…06_` are the entry points.
 - `pyproject.toml` / `uv.lock` — shared dev environment (managed with `uv`).
 
-## Quick start
+## Running the workflow
 
-```bash
-uv sync
-uv run jupyter lab fe_endpoint_prototype/
-```
-
-Then run notebooks `01` → `06` in order. See the
-[subfolder README](fe_endpoint_prototype/README.md) for full details on each step,
-endpoint configuration, and benchmarking methodology.
+* Run the notebook 01 to 06 in a databricks workspace
+* The `fe_endpoint_prototype/load_testing/` is for local testing
 
 ## Reference
 
 * [Deploy and Query Databricks Model Serving](https://docs.databricks.com/aws/en/machine-learning/model-serving/model-serving-intro)
+* [Set Up M2M OAuth](https://docs.databricks.com/aws/en/dev-tools/auth/oauth-m2m)
 * [MLFlow Model](https://mlflow.org/docs/latest/ml/model/)
 * [MLFlow From Code](https://mlflow.org/docs/latest/ml/model/models-from-code/)
